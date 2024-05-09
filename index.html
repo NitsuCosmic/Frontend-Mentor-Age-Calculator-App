@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles/reset.css" />
+		<link rel="stylesheet" href="./styles/style.css" />
+
+		<title>Frontend Mentor | Age calculator app</title>
+	</head>
+	<body>
+		<main>
+			<div class="date-calculator__wrapper">
+				<div class="date-calculator__inputs">
+					<div class="date-calculator__input-wrapper">
+						<label for="day-input" class="date-calculator__label">Day</label>
+						<input
+							type="number"
+							name="day"
+							class="date-calculator__input"
+							id="day-input"
+							placeholder="DD"
+						/>
+						<p class="error-message"></p>
+					</div>
+					<div class="date-calculator__input-wrapper">
+						<label for="month-input" class="date-calculator__label"
+							>Month</label
+						>
+						<input
+							type="number"
+							name="month"
+							class="date-calculator__input"
+							id="month-input"
+							placeholder="MM"
+						/>
+						<p class="error-message"></p>
+					</div>
+					<div class="date-calculator__input-wrapper">
+						<label for="year-input" class="date-calculator__label">Year</label>
+						<input
+							type="number"
+							name="year"
+							class="date-calculator__input"
+							id="year-input"
+							placeholder="YYYY"
+						/>
+						<p class="error-message"></p>
+					</div>
+				</div>
+				<div class="date-calculator__button-wrapper">
+					<button
+						class="date-calculator__calculate-button"
+						id="calculate-button"
+					>
+						<img src="./assets/images/icon-arrow.svg" alt="Arrow" />
+					</button>
+				</div>
+				<div class="date-calculator__output">
+					<h2 class="date-calculator__output-heading">
+						<i
+							><span class="date-calculator__output-value" id="output-years"
+								>--</span
+							>
+							years</i
+						>
+					</h2>
+					<h2 class="date-calculator__output-heading">
+						<i
+							><span class="date-calculator__output-value" id="output-months"
+								>--</span
+							>
+							months</i
+						>
+					</h2>
+					<h2 class="date-calculator__output-heading">
+						<i
+							><span class="date-calculator__output-value" id="output-days"
+								>--</span
+							>
+							days</i
+						>
+					</h2>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by
+				<a
+					href="https://www.frontendmentor.io/profile/NitsuCosmic"
+					target="_blank"
+					>Nitsu</a
+				>.
+			</div>
+		</footer>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
